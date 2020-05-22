@@ -66,6 +66,9 @@
                                                         <rect key="frame" x="65.333333333333357" y="0.0" width="235.66666666666663" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="30s-Uh-JuN"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -82,6 +85,9 @@
                                                         <rect key="frame" x="65.333333333333357" y="0.0" width="235.66666666666663" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="jRg-Le-xTq"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -98,6 +104,9 @@
                                                         <rect key="frame" x="65.333333333333357" y="0.0" width="235.66666666666663" height="31"/>
                                                         <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="maximumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <connections>
+                                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="JTo-XM-quo"/>
+                                                        </connections>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
@@ -117,6 +126,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="dTm-oN-10X" id="B0I-BD-JMx"/>
+                        <outlet property="blueLabelValue" destination="PZ2-wr-CnZ" id="8P0-07-iaE"/>
+                        <outlet property="blueSlider" destination="S5U-xs-0BE" id="jPy-gx-djG"/>
+                        <outlet property="greenLabel" destination="YYR-Kf-qDb" id="E3H-pm-Rea"/>
+                        <outlet property="greenLabelValue" destination="0BP-HU-6CL" id="cZX-OP-RsY"/>
+                        <outlet property="greenSlider" destination="8qu-IP-dKY" id="HIP-Lf-ujH"/>
+                        <outlet property="mainView" destination="WXL-T6-kvM" id="lLN-aT-CKH"/>
+                        <outlet property="redLabel" destination="60O-jk-Cg3" id="bcJ-21-CG0"/>
+                        <outlet property="redLabelValue" destination="EC6-TM-orn" id="iFc-JZ-njY"/>
+                        <outlet property="redSlider" destination="n1k-F8-icM" id="iRJ-UX-qtM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
