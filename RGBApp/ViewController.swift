@@ -23,12 +23,13 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
         mainView.layer.cornerRadius = 10
         redLabelValue.text = String(format: "%.2f", redSlider.value)
         greenLabelValue.text = String(format: "%.2f", greenSlider.value)
         blueLabelValue.text = String(format: "%.2f", blueSlider.value)
+        updateColor()
         
     }
 
